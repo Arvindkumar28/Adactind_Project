@@ -1,11 +1,17 @@
 package com.maven_project1;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -25,6 +31,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Base_Class {
 
 	public static WebDriver driver; // -------> Null Driver
+	
+	public static String value; 
 
 	public static WebDriver getBrowser(String type) {
 
@@ -49,6 +57,39 @@ public class Base_Class {
 			e.printStackTrace();
 		}
 		return driver;
+
+	}
+	
+	public static String Particular_Excel_Data(String path, int row_Index, int cell_Index) throws Throwable {
+		
+		File D = new File(path);
+
+		FileInputStream fis = new FileInputStream(D);
+
+		Workbook WB = new XSSFWorkbook(fis);
+
+		Sheet sheetAt = WB.getSheetAt(0);
+
+		Row row = sheetAt.getRow(row_Index);
+
+		Cell cell = row.getCell(cell_Index);
+
+		CellType cellType = cell.getCellType();
+
+		if (cellType.equals(cellType.STRING)) {
+
+			value = cell.getStringCellValue();
+
+		} else if (cellType.equals(cellType.NUMERIC)) {
+
+			double numericCellValue = cell.getNumericCellValue();
+
+			int val= (int) numericCellValue;
+
+			value = String.valueOf(val);
+
+		}
+		return value;
 
 	}
 
@@ -91,6 +132,24 @@ public class Base_Class {
 		Alert.dismiss();
 
 	}
+	
+	public static void frame(String frame) {
+		
+		try {
+			if (frame.equalsIgnoreCase("frame1")) {
+				driver.switchTo().frame(0);
+			}else if (frame.equalsIgnoreCase("frame2")) {
+				
+			}else {
+				driver.switchTo().defaultContent();
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
 
 	public static void Sleep(int milliseconds) throws InterruptedException {
 

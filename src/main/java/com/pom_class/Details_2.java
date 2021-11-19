@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Details {
+public class Details_2{
 
 	public WebDriver driver;
 
@@ -78,7 +78,7 @@ public class Details {
 	public WebElement getbook_now() {
 		return book_now;
 	}
-
+	
 	@FindBy(xpath = "//a[text()='Booked Itinerary']")
 	private WebElement booked;
 
@@ -114,7 +114,7 @@ public class Details {
 		return page1;
 	}
 
-	public Details(WebDriver driver3) {
+	public Details_2(WebDriver driver3) {
 		this.driver = driver3;
 		PageFactory.initElements(driver, this);
 	}

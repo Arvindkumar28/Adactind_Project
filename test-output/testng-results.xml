@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37" started-at="2021-11-19T05:41:37Z" finished-at="2021-11-19T05:41:37Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37" started-at="2021-11-19T05:41:37Z" finished-at="2021-11-19T05:41:37Z">
+      <class name="com.testng.Simple_Annotations_Example">
+        <test-method status="PASS" signature="url()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="url" is-config="true" duration-ms="8" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method status="PASS" signature="Women()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="Women" duration-ms="4" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Women -->
+        <test-method status="PASS" signature="signin()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="signin" is-config="true" duration-ms="0" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method status="PASS" signature="signoff()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="signoff" is-config="true" duration-ms="1" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signoff -->
+        <test-method status="PASS" signature="dress()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="dress" duration-ms="1" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dress -->
+        <test-method status="PASS" signature="signin()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="signin" is-config="true" duration-ms="0" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method status="PASS" signature="signoff()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="signoff" is-config="true" duration-ms="0" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signoff -->
+        <test-method status="PASS" signature="signin()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="signin" is-config="true" duration-ms="0" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method status="PASS" signature="mens()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="mens" duration-ms="1" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mens -->
+        <test-method status="PASS" signature="signoff()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="signoff" is-config="true" duration-ms="0" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signoff -->
+        <test-method status="PASS" signature="Homepage()[pri:0, instance:com.testng.Simple_Annotations_Example@17c386de]" name="Homepage" is-config="true" duration-ms="0" started-at="2021-11-19T11:11:37Z" finished-at="2021-11-19T11:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+      </class> <!-- com.testng.Simple_Annotations_Example -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
