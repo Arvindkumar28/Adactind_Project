@@ -116,7 +116,7 @@ public class Base_Class {
 		File sc = ss.getScreenshotAs(OutputType.FILE);
 
 		File destination = new File(
-				"C:\\Users\\arvim.000\\eclipse-workspace\\maven_project1\\Screenshot\\HotelBooking.png");
+				"C:\\Users\\arvim.000\\eclipse-workspace\\maven_project1\\Screenshot\\HotelBookingTNG.png");
 
 		FileHandler.copy(sc, destination);
 	}

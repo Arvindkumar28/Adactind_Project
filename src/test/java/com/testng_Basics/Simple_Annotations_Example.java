@@ -1,4 +1,4 @@
-package com.testng;
+package com.testng_Basics;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -58,3 +58,4 @@ public class Simple_Annotations_Example {
 
 	}
 }
+
